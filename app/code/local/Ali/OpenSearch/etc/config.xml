@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+      <modules>
+        <Ali_OpenSearch>
+          <version>0.1.0</version>
+        </Ali_OpenSearch>
+      </modules>
+      <global>
+      		<helpers>
+	            <opensearch>
+	              <class>Ali_OpenSearch_Helper</class>
+	            </opensearch>
+	        </helpers>
+			<models>
+                            <catalogsearch_resource>
+                                <rewrite>                                    
+                                    <fulltext>Ali_OpenSearch_Model_Resource_Fulltext</fulltext>
+                                </rewrite>
+                            </catalogsearch_resource>
+			</models>
+      </global>
+</config>
